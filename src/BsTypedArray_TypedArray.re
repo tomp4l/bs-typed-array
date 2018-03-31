@@ -56,8 +56,7 @@ module Uint8ClampedArray = {
   external from : array(ocamlType) => t = "";
   [@bs.new] external createWithLength : int => t = "Uint8ClampedArray";
   [@bs.new]
-  external copyFromTypedArray : typedArray('a, 'b) => t =
-    "Uint8ClampedArray";
+  external copyFromTypedArray : typedArray('a, 'b) => t = "Uint8ClampedArray";
   [@bs.new]
   external createFromArrayBuffer : (ArrayBuffer.t, int, int) => t =
     "Uint8ClampedArray";
@@ -309,7 +308,17 @@ let reverseInPlace = a => _reverse(a, ());
 [@bs.send] external set : (t('a, 'b), array('a)) => t('a, 'b) = "";
 
 [@bs.send]
-external setFromTyped : (t('a, 'b), t('a, 'b)) => t('a, 'b) = "set";
+external setAt : (t('a, 'b), array('a), int) => t('a, 'b) = "set";
+
+[@bs.send]
+external setFromTyped : (t('a, 'b), t('c, 'd)) => t('a, 'b) = "set";
+
+[@bs.send]
+external setFromTypedAt : (t('a, 'b), t('c, 'd), int) => t('a, 'b) = "set";
+
+[@bs.set_index]
+external setOneAt : (t('a, 'b), int, 'a) => t('a, 'b) = "";
+
 
 [@bs.send] external slice : (t('a, 'b), int, int) => t('a, 'b) = "";
 

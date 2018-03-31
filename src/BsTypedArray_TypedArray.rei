@@ -191,9 +191,24 @@ let reverseInPlace: t('a, 'b) => t('a, 'b);
 let set: (t('a, 'b), array('a)) => t('a, 'b);
 
 /**
+ * typedarray.set(array, offset)
+ */
+let setAt: (t('a, 'b), array('a), int) => t('a, 'b);
+
+/**
  * typedarray.set(typedarray)
  */
-let setFromTyped: (t('a, 'b), t('a, 'b)) => t('a, 'b);
+let setFromTyped: (t('a, 'b), t('c, 'd)) => t('a, 'b);
+
+/**
+ * typedarray.set(typedarray, offset)
+ */
+let setFromTypedAt: (t('a, 'b), t('c, 'd), int) => t('a, 'b);
+
+/**F
+ * typedarray[index] = item
+ */
+let setOneAt: (t('a, 'b), int, 'a) => t('a, 'b);
 
 /**
  * typedarray.slice(begin, end)
