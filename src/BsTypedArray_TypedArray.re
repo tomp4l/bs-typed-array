@@ -21,15 +21,15 @@ module Int8Array = {
   type element;
   type t = typedArray(ocamlType, element);
   [@bs.val] [@bs.scope "Int8Array"]
-  external from : array(ocamlType) => t = "";
+  external from : array(ocamlType) => t = "fromfrom";
   [@bs.new] external createWithLength : int => t = "Int8Array";
   [@bs.new]
   external copyFromTypedArray : typedArray('a, 'b) => t = "Int8Array";
   [@bs.new]
   external createFromArrayBuffer : (ArrayBuffer.t, int, int) => t =
     "Int8Array";
-  [@bs.val] [@bs.scope "Int8Array"] external name : string = "";
-  [@bs.val] [@bs.scope "Int8Array"] external bytesPerElement : int = "";
+  [@bs.val] [@bs.scope "Int8Array"] external name : string = "name";
+  [@bs.val] [@bs.scope "Int8Array"] external bytesPerElement : int = "bytesPerElement";
 };
 
 module Uint8Array = {
@@ -37,15 +37,15 @@ module Uint8Array = {
   type element;
   type t = typedArray(ocamlType, element);
   [@bs.val] [@bs.scope "Uint8Array"]
-  external from : array(ocamlType) => t = "";
+  external from : array(ocamlType) => t = "from";
   [@bs.new] external createWithLength : int => t = "Uint8Array";
   [@bs.new]
   external copyFromTypedArray : typedArray('a, 'b) => t = "Uint8Array";
   [@bs.new]
   external createFromArrayBuffer : (ArrayBuffer.t, int, int) => t =
     "Uint8Array";
-  [@bs.val] [@bs.scope "Uint8Array"] external name : string = "";
-  [@bs.val] [@bs.scope "Uint8Array"] external bytesPerElement : int = "";
+  [@bs.val] [@bs.scope "Uint8Array"] external name : string = "name";
+  [@bs.val] [@bs.scope "Uint8Array"] external bytesPerElement : int = "bytesPerElement";
 };
 
 module Uint8ClampedArray = {
@@ -53,16 +53,16 @@ module Uint8ClampedArray = {
   type element;
   type t = typedArray(ocamlType, element);
   [@bs.val] [@bs.scope "Uint8ClampedArray"]
-  external from : array(ocamlType) => t = "";
+  external from : array(ocamlType) => t = "from";
   [@bs.new] external createWithLength : int => t = "Uint8ClampedArray";
   [@bs.new]
   external copyFromTypedArray : typedArray('a, 'b) => t = "Uint8ClampedArray";
   [@bs.new]
   external createFromArrayBuffer : (ArrayBuffer.t, int, int) => t =
     "Uint8ClampedArray";
-  [@bs.val] [@bs.scope "Uint8ClampedArray"] external name : string = "";
+  [@bs.val] [@bs.scope "Uint8ClampedArray"] external name : string = "name";
   [@bs.val] [@bs.scope "Uint8ClampedArray"]
-  external bytesPerElement : int = "";
+  external bytesPerElement : int = "bytesPerElement";
 };
 
 module Int16Array = {
@@ -70,15 +70,15 @@ module Int16Array = {
   type element;
   type t = typedArray(ocamlType, element);
   [@bs.val] [@bs.scope "Int16Array"]
-  external from : array(ocamlType) => t = "";
+  external from : array(ocamlType) => t = "from";
   [@bs.new] external createWithLength : int => t = "Int16Array";
   [@bs.new]
   external copyFromTypedArray : typedArray('a, 'b) => t = "Int16Array";
   [@bs.new]
   external createFromArrayBuffer : (ArrayBuffer.t, int, int) => t =
     "Int16Array";
-  [@bs.val] [@bs.scope "Int16Array"] external name : string = "";
-  [@bs.val] [@bs.scope "Int16Array"] external bytesPerElement : int = "";
+  [@bs.val] [@bs.scope "Int16Array"] external name : string = "name";
+  [@bs.val] [@bs.scope "Int16Array"] external bytesPerElement : int = "bytesPerElement";
 };
 
 module Uint16Array = {
@@ -86,15 +86,15 @@ module Uint16Array = {
   type element;
   type t = typedArray(ocamlType, element);
   [@bs.val] [@bs.scope "Uint16Array"]
-  external from : array(ocamlType) => t = "";
+  external from : array(ocamlType) => t = "from";
   [@bs.new] external createWithLength : int => t = "Uint16Array";
   [@bs.new]
   external copyFromTypedArray : typedArray('a, 'b) => t = "Uint16Array";
   [@bs.new]
   external createFromArrayBuffer : (ArrayBuffer.t, int, int) => t =
     "Uint16Array";
-  [@bs.val] [@bs.scope "Uint16Array"] external name : string = "";
-  [@bs.val] [@bs.scope "Uint16Array"] external bytesPerElement : int = "";
+  [@bs.val] [@bs.scope "Uint16Array"] external name : string = "name";
+  [@bs.val] [@bs.scope "Uint16Array"] external bytesPerElement : int = "bytesPerElement";
 };
 
 module Int32Array = {
@@ -102,15 +102,15 @@ module Int32Array = {
   type element;
   type t = typedArray(ocamlType, element);
   [@bs.val] [@bs.scope "Int32Array"]
-  external from : array(ocamlType) => t = "";
+  external from : array(ocamlType) => t = "from";
   [@bs.new] external createWithLength : int => t = "Int32Array";
   [@bs.new]
   external copyFromTypedArray : typedArray('a, 'b) => t = "Int32Array";
   [@bs.new]
   external createFromArrayBuffer : (ArrayBuffer.t, int, int) => t =
     "Int32Array";
-  [@bs.val] [@bs.scope "Int32Array"] external name : string = "";
-  [@bs.val] [@bs.scope "Int32Array"] external bytesPerElement : int = "";
+  [@bs.val] [@bs.scope "Int32Array"] external name : string = "name";
+  [@bs.val] [@bs.scope "Int32Array"] external bytesPerElement : int = "bytesPerElement";
 };
 
 module Uint32Array = {
@@ -118,15 +118,15 @@ module Uint32Array = {
   type element;
   type t = typedArray(ocamlType, element);
   [@bs.val] [@bs.scope "Uint32Array"]
-  external from : array(ocamlType) => t = "";
+  external from : array(ocamlType) => t = "from";
   [@bs.new] external createWithLength : int => t = "Uint32Array";
   [@bs.new]
   external copyFromTypedArray : typedArray('a, 'b) => t = "Uint32Array";
   [@bs.new]
   external createFromArrayBuffer : (ArrayBuffer.t, int, int) => t =
     "Uint32Array";
-  [@bs.val] [@bs.scope "Uint32Array"] external name : string = "";
-  [@bs.val] [@bs.scope "Uint32Array"] external bytesPerElement : int = "";
+  [@bs.val] [@bs.scope "Uint32Array"] external name : string = "name";
+  [@bs.val] [@bs.scope "Uint32Array"] external bytesPerElement : int = "bytesPerElement";
 };
 
 module Float32Array = {
@@ -134,15 +134,15 @@ module Float32Array = {
   type element;
   type t = typedArray(ocamlType, element);
   [@bs.val] [@bs.scope "Float32Array"]
-  external from : array(ocamlType) => t = "";
+  external from : array(ocamlType) => t = "from";
   [@bs.new] external createWithLength : int => t = "Float32Array";
   [@bs.new]
   external copyFromTypedArray : typedArray('a, 'b) => t = "Float32Array";
   [@bs.new]
   external createFromArrayBuffer : (ArrayBuffer.t, int, int) => t =
     "Float32Array";
-  [@bs.val] [@bs.scope "Float32Array"] external name : string = "";
-  [@bs.val] [@bs.scope "Float32Array"] external bytesPerElement : int = "";
+  [@bs.val] [@bs.scope "Float32Array"] external name : string = "name";
+  [@bs.val] [@bs.scope "Float32Array"] external bytesPerElement : int = "bytesPerElement";
 };
 
 module Float64Array = {
@@ -150,15 +150,15 @@ module Float64Array = {
   type element;
   type t = typedArray(ocamlType, element);
   [@bs.val] [@bs.scope "Float64Array"]
-  external from : array(ocamlType) => t = "";
+  external from : array(ocamlType) => t = "from";
   [@bs.new] external createWithLength : int => t = "Float64Array";
   [@bs.new]
   external copyFromTypedArray : typedArray('a, 'b) => t = "Float64Array";
   [@bs.new]
   external createFromArrayBuffer : (ArrayBuffer.t, int, int) => t =
     "Float64Array";
-  [@bs.val] [@bs.scope "Float64Array"] external name : string = "";
-  [@bs.val] [@bs.scope "Float64Array"] external bytesPerElement : int = "";
+  [@bs.val] [@bs.scope "Float64Array"] external name : string = "name";
+  [@bs.val] [@bs.scope "Float64Array"] external bytesPerElement : int = "bytesPerElement";
 };
 
 type kind('ocamlType, 'jsType) =
@@ -258,54 +258,54 @@ type reduceCallback('a, 'r) = (. 'r, 'a) => 'r;
 let copy = a => _copy(a, ());
 
 [@bs.send]
-external copyWithin : (t('a, 'b), int, int, int) => t('a, 'b) = "";
+external copyWithin : (t('a, 'b), int, int, int) => t('a, 'b) = "copyWithin";
 
 [@bs.send]
 external copyWithinRest : (t('a, 'b), int, int) => t('a, 'b) = "copyWithin";
 
-[@bs.send] external every : (t('a, 'b), callback('a, bool)) => bool = "";
+[@bs.send] external every : (t('a, 'b), callback('a, bool)) => bool = "every";
 
-[@bs.send] external fill : (t('a, 'b), 'a) => t('a, 'b) = "";
+[@bs.send] external fill : (t('a, 'b), 'a) => t('a, 'b) = "fill";
 
 [@bs.send]
-external filter : (t('a, 'b), callback('a, bool)) => t('a, 'b) = "";
+external filter : (t('a, 'b), callback('a, bool)) => t('a, 'b) = "filter";
 
 [@bs.send] [@bs.return nullable]
-external find : (t('a, 'b), callback('a, bool)) => option('a) = "";
+external find : (t('a, 'b), callback('a, bool)) => option('a) = "find";
 
-[@bs.send] external forEach : (t('a, 'b), callback('a, unit)) => unit = "";
+[@bs.send] external forEach : (t('a, 'b), callback('a, unit)) => unit = "forEach";
 
 [@bs.get_index] [@bs.return nullable]
 external get : (t('a, 'b), int) => option('a) = "";
 
-[@bs.send] external includes : (t('a, 'b), 'a) => bool = "";
+[@bs.send] external includes : (t('a, 'b), 'a) => bool = "includes";
 
 [@bs.send] external includesFrom : (t('a, 'b), 'a, int) => bool = "includes";
 
-[@bs.send] external indexOf : (t('a, 'b), 'a) => int = "";
+[@bs.send] external indexOf : (t('a, 'b), 'a) => int = "indexOf";
 
 [@bs.send] external indexOfFrom : (t('a, 'b), 'a, int) => int = "indexOf";
 
-[@bs.send] external join : (t('a, 'b), string) => string = "";
+[@bs.send] external join : (t('a, 'b), string) => string = "join";
 
-[@bs.send] external lastIndexOf : (t('a, 'b), 'a) => int = "";
+[@bs.send] external lastIndexOf : (t('a, 'b), 'a) => int = "lastIndexOf";
 
 [@bs.send]
 external lastIndexOfFrom : (t('a, 'b), 'a, int) => int = "lastIndexOf";
 
-[@bs.send] external map : (t('a, 'b), callback('a, 'a)) => t('a, 'b) = "";
+[@bs.send] external map : (t('a, 'b), callback('a, 'a)) => t('a, 'b) = "map";
 
 [@bs.send]
-external reduce : (t('a, 'b), reduceCallback('a, 'r), 'r) => 'r = "";
+external reduce : (t('a, 'b), reduceCallback('a, 'r), 'r) => 'r = "reduce";
 
 [@bs.send]
-external reduceRight : (t('a, 'b), reduceCallback('a, 'r), 'r) => 'r = "";
+external reduceRight : (t('a, 'b), reduceCallback('a, 'r), 'r) => 'r = "reduceRight";
 
 [@bs.send] external _reverse : (t('a, 'b), unit) => t('a, 'b) = "reverse";
 
 let reverseInPlace = a => _reverse(a, ());
 
-[@bs.send] external set : (t('a, 'b), array('a)) => t('a, 'b) = "";
+[@bs.send] external set : (t('a, 'b), array('a)) => t('a, 'b) = "set";
 
 [@bs.send]
 external setAt : (t('a, 'b), array('a), int) => t('a, 'b) = "set";
@@ -320,11 +320,11 @@ external setFromTypedAt : (t('a, 'b), t('c, 'd), int) => t('a, 'b) = "set";
 external setOneAt : (t('a, 'b), int, 'a) => t('a, 'b) = "";
 
 
-[@bs.send] external slice : (t('a, 'b), int, int) => t('a, 'b) = "";
+[@bs.send] external slice : (t('a, 'b), int, int) => t('a, 'b) = "slice";
 
 [@bs.send] external sliceRest : (t('a, 'b), int) => t('a, 'b) = "slice";
 
-[@bs.send] external some : (t('a, 'b), callback('a, bool)) => bool = "";
+[@bs.send] external some : (t('a, 'b), callback('a, bool)) => bool = "some";
 
 [@bs.send] external _sort : (t('a, 'b), unit) => t('a, 'b) = "sort";
 
